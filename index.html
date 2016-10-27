@@ -117,6 +117,17 @@
         return element
       }
 
+
+      function appendClass(elem, klass) {
+        if (!elm.hasAttribute("class")){
+          elem.setAttribute("class", klass)
+        } else{
+          var classes = elem.getAttribute("class")
+          classes += " " + klass
+          elem.setAttribute("class", classes)
+        }
+        return elem
+      }
     </script>
   </body>
 
